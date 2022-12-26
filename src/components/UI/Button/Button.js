@@ -28,9 +28,12 @@ const StyledButton = styled.button`
   }
 `;
 
-const Button = ({ children, className }) => {
-  console.log(className);
-  return <StyledButton className={className}>{children}</StyledButton>;
+const Button = ({ children, className, ...rest }) => {
+  return (
+    <StyledButton className={className} {...rest}>
+      {children}
+    </StyledButton>
+  );
 };
 
 export default Button;

@@ -3,6 +3,7 @@ import Wrapper from "./Navbar.styled";
 import { ReactComponent as Logo } from "../../images/logo.svg";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Button from "../UI/Button/Button";
+import MobileMenu from "../UI/MobileMenu/MobileMenu";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -15,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <Wrapper>
+    <Wrapper className="container">
       <Logo className="logo" />
       <button className="menu-btn" onClick={openMenu}>
         <AiOutlineMenu />
@@ -43,6 +44,7 @@ const Navbar = () => {
         <Button className="transparent filled text-light fs-400">Login</Button>
         <Button className="primary fs-400 text-white">Sign Up</Button>
       </div>
+      {showMenu && <MobileMenu onClose={closeMenu} />}
     </Wrapper>
   );
 };

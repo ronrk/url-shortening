@@ -28,7 +28,7 @@ const statistics = [
 
 const AdvancedSection = () => {
   return (
-    <Wrapper>
+    <Wrapper className="container">
       <h2 className="text-dark fs-700">Advanced Statistics</h2>
       <p className="text-light fs-500">
         Track how your links are performing across the web with our advanced

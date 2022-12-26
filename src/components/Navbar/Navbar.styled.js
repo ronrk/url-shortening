@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const NavbarWrapper = styled.header`
+  position: relative;
   padding-block: 3em;
   display: flex;
   align-items: center;

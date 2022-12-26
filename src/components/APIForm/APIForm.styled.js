@@ -6,9 +6,9 @@ const APIForm = styled.form`
   margin-top: 6rem;
   background-color: var(--color-primary-dark);
   background-image: url(${mobileBg});
-  background-position: right top;
-  background-size: fill;
-  padding: 2em;
+  background-position: right bottom;
+  background-size: cover;
+  padding-block: 3em;
   background-repeat: no-repeat;
   align-items: center;
   border-radius: 6px;
@@ -33,6 +33,7 @@ const APIForm = styled.form`
     flex-direction: row;
     align-items: stretch;
     background-image: url(${desktopBg});
+    padding-block: 4em;
 
     & input {
       flex-grow: 1;

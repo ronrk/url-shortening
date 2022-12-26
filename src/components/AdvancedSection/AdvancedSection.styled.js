@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const AdvancedSectionWrapper = styled.section`
   text-align: center;
-  margin-top: 8rem;
+  margin-block: 8rem;
   p {
     max-width: 50ch;
     margin-inline: auto;
@@ -57,7 +57,7 @@ const AdvancedSectionWrapper = styled.section`
       }
 
       &::after {
-        width: 100%;
+        width: 90%;
         height: 10px;
         top: 70%;
       }

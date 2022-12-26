@@ -8,55 +8,75 @@ import Wrapper from "./Footer.styled";
 
 const Footer = () => {
   return (
-    <Wrapper>
-      <Logo />
+    <Wrapper className="container bg-dark flex-c">
+      <Logo className="logo" />
       <nav>
-        <ul>
-          <li>Features</li>
+        <ul className="flex-c">
+          <li className="text-white fs-400">Features</li>
           <li>
-            <a href="/">Link Shortening</a>
+            <a className="text-light fs-400" href="/">
+              Link Shortening
+            </a>
           </li>
           <li>
-            <a href="/">Branded Links</a>
+            <a className="text-light fs-400" href="/">
+              Branded Links
+            </a>
           </li>
           <li>
-            <a href="/">Analytics</a>
-          </li>
-        </ul>
-        <ul>
-          <li>Resources</li>
-          <li>
-            <a href="/">Blog</a>
-          </li>
-          <li>
-            <a href="/">Developers</a>
-          </li>
-          <li>
-            <a href="/">Support</a>
+            <a className="text-light fs-400" href="/">
+              Analytics
+            </a>
           </li>
         </ul>
-        <ul>
-          <li>Company</li>
+        <ul className="flex-c">
+          <li className="text-white fs-400">Resources</li>
           <li>
-            <a href="/">About</a>
+            <a className="text-light fs-400" href="/">
+              Blog
+            </a>
           </li>
           <li>
-            <a href="/">Our Team</a>
+            <a className="text-light fs-400" href="/">
+              Developers
+            </a>
           </li>
           <li>
-            <a href="/">Careers</a>
-          </li>
-          <li>
-            <a href="/">Contact</a>
+            <a className="text-light fs-400" href="/">
+              Support
+            </a>
           </li>
         </ul>
-        <div className="social-links">
-          <FacebookIcon />
-          <TwitterIcon />
-          <PinterestIcon />
-          <InstagramIcon />
-        </div>
+        <ul className="flex-c">
+          <li className="text-white fs-400">Company</li>
+          <li>
+            <a className="text-light fs-400" href="/">
+              About
+            </a>
+          </li>
+          <li>
+            <a className="text-light fs-400" href="/">
+              Our Team
+            </a>
+          </li>
+          <li>
+            <a className="text-light fs-400" href="/">
+              Careers
+            </a>
+          </li>
+          <li>
+            <a className="text-light fs-400" href="/">
+              Contact
+            </a>
+          </li>
+        </ul>
       </nav>
+      <div className="social-links flex">
+        <FacebookIcon />
+        <TwitterIcon />
+        <PinterestIcon />
+        <InstagramIcon />
+      </div>
     </Wrapper>
   );
 };

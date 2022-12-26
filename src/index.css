@@ -74,7 +74,6 @@ img {
 }
 
 .container {
-  /* width: 80%; */
   padding-inline: clamp(3em, 5vw, 10rem);
 }
 
@@ -105,6 +104,9 @@ img {
 }
 .text-white {
   color: var(--color-white);
+}
+.text-primary {
+  color: var(--color-primary);
 }
 
 .bg-white {

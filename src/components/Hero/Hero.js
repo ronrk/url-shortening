@@ -5,7 +5,7 @@ import Button from "../UI/Button/Button";
 
 const Hero = () => {
   return (
-    <Wrapper>
+    <Wrapper className="container">
       <img src={heroImg} alt="hero" className="hero__img" />
       <div className="content">
         <h1 className="fs-900 text-dark">More than just shorter links</h1>
